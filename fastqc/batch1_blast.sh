@@ -3,7 +3,7 @@
 #SBATCH --account=bio210016p
 #SBATCH --partition=RM
 #SBATCH --nodes=1
-#SBATCH --ntasks-per-node=4
+#SBATCH --ntasks-per-node=1
 #SBATCH --time=10:00:00
 #SBATCH -o /ocean/projects/bio210016p/makman/outs/batch1_blast.out
 #SBATCH -e /ocean/projects/bio210016p/makman/outs/batch1_blast.err
