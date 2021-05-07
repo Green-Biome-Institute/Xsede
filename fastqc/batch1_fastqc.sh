@@ -29,3 +29,4 @@ module load FastQC
 /opt/packages/FastQC/0.11.9/fastqc GBI_Fstriata_S10_L001_R2_001.fastq.gz
 
 
+#The last 4 lines took 32 SUs with 24 CPUs on RM-shared
