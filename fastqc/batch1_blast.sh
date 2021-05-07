@@ -1,9 +1,8 @@
 #!/bin/bash 
 #SBATCH -D /ocean/projects/bio210016p/shared/novaseq/batch1
 #SBATCH --account=bio210016p
-#SBATCH --partition=RM
-#SBATCH --nodes=1
-#SBATCH --ntasks-per-node=1
+#SBATCH --partition=RM-shared
+#SBATCH --ntasks-per-node=24
 #SBATCH --time=70:00:00
 #SBATCH -o /ocean/projects/bio210016p/makman/outs/batch1_blast.out
 #SBATCH -e /ocean/projects/bio210016p/makman/outs/batch1_blast.err
