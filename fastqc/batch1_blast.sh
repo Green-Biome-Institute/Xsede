@@ -18,10 +18,15 @@
 # 
 # gzip *.fastq
 
-cd /ocean/projects/bio210016p/shared/blast_databases/
+# cd /ocean/projects/bio210016p/shared/blast_databases/
 
 module load BLAST/2.9.0
-# update_blastdb.pl --decompress nr [*]
-update_blastdb.pl --decompress nt [*]
+# update_blastdb.pl --decompress nr [*] #58 SUs
+# update_blastdb.pl --decompress nt [*]
 
-# srun /global/home/users/makman/blast/ncbi-blast-2.10.0+/bin/blastn -task blastn -num_descriptions 1 -num_alignments 1 -num_threads 24 -query Plant_HO2_subsample.fasta -db /global/scratch/makman/blast_database/nt_database/nt -out Plant_HO2_subsample_num.out
+cd /ocean/projects/bio210016p/shared/novaseq/batch1/
+blastn -task blastn -num_descriptions 1 -num_alignments 1 -num_threads 24 -query GBI_Adensiflora_S3_L001_R1_001_100K.fastq.gz -db /ocean/projects/bio210016p/shared/blast_databases/nt -out GBI_Adensiflora_S3_L001_R1_001_100K_blast.out
+# blastn -task blastn -num_descriptions 1 -num_alignments 1 -num_threads 24 -query GBI_Apallida_S1_L001_R1_001_100K.fastq.gz -db /ocean/projects/bio210016p/shared/blast_databases/nt -out GBI_Apallida_S1_L001_R1_001_100K_blast.out
+# blastn -task blastn -num_descriptions 1 -num_alignments 1 -num_threads 24 -query GBI_Ecovalifolium_S2_L001_R1_001_100K.fastq.gz -db /ocean/projects/bio210016p/shared/blast_databases/nt -out GBI_Ecovalifolium_S2_L001_R1_001_100K_blast.out
+# blastn -task blastn -num_descriptions 1 -num_alignments 1 -num_threads 24 -query GBI_Fstriata_S4_L001_R1_001_100K.fastq.gz -db /ocean/projects/bio210016p/shared/blast_databases/nt -out GBI_Fstriata_S4_L001_R1_001_100K_blast.out
+# blastn -task blastn -num_descriptions 1 -num_alignments 1 -num_threads 24 -query GBI_Mabbottii_S5_L001_R1_001_100K.fastq.gz -db /ocean/projects/bio210016p/shared/blast_databases/nt -out GBI_Mabbottii_S5_L001_R1_001_100K_blast.out
