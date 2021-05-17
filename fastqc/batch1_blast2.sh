@@ -3,7 +3,7 @@
 #SBATCH --account=bio210016p
 #SBATCH --partition=RM-shared
 #SBATCH --ntasks-per-node=128
-#SBATCH --time=48:00:00
+#SBATCH --time=24:00:00
 #SBATCH -o /ocean/projects/bio210016p/makman/outs/batch1_blast2.out
 #SBATCH -e /ocean/projects/bio210016p/makman/outs/batch1_blast2.err
 #SBATCH --mail-user=melis.akman@csueastbay.edu
