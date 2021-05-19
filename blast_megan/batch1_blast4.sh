@@ -9,7 +9,7 @@
 #SBATCH --mail-user=melis.akman@csueastbay.edu
 #SBATCH --mail-type=All
 
-zcat GBI_Fstriata_S4_L001_R1_001.fastq.gz | head -n 200000 >GBI_Fstriata_S4_L001_R1_001_50K.fastq
+zcat rawdata/GBI_Fstriata_S4_L001_R1_001.fastq.gz | head -n 200000 >GBI_Fstriata_S4_L001_R1_001_50K.fastq
 # 
 # 
 
