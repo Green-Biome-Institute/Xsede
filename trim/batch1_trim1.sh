@@ -22,8 +22,10 @@ module load python/3.8.6
 # TCCACGTT GTCTGATC Mabb
 
 
-zcat GBI_Adensiflora_S3_L001_R1_001.fastq.gz GBI_Adensiflora_S9_L001_R1_001.fastq.gz > GBI_Adensiflora_S3_S9_L001_R1_001.fastq.gz
-zcat GBI_Adensiflora_S3_L001_R2_001.fastq.gz GBI_Adensiflora_S9_L001_R2_001.fastq.gz > GBI_Adensiflora_S3_S9_L001_R2_001.fastq.gz
+zcat GBI_Adensiflora_S3_L001_R1_001.fastq.gz GBI_Adensiflora_S9_L001_R1_001.fastq.gz > GBI_Adensiflora_S3_S9_L001_R1_001.fastq
+zcat GBI_Adensiflora_S3_L001_R2_001.fastq.gz GBI_Adensiflora_S9_L001_R2_001.fastq.gz > GBI_Adensiflora_S3_S9_L001_R2_001.fastq
 
+gzip GBI_Adensiflora_S3_S9_L001_R1_001.fastq
+gzip GBI_Adensiflora_S3_S9_L001_R2_001.fastq
 
 /ocean/projects/bio210016p/shared/programs/TrimGalore-0.6.6/trim_galore --paired --illumina --fastqc --gzip --cores 24 GBI_Adensiflora_S3_S9_L001_R1_001.fastq.gz GBI_Adensiflora_S3_S9_L001_R2_001.fastq.gz 
