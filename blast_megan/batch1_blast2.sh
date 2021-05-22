@@ -22,3 +22,5 @@ blastn -task blastn -num_descriptions 1 -num_alignments 1 -num_threads 64 -query
 
 
 #failed timed out 2304 SUs
+
+#333 SUs

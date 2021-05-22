@@ -20,4 +20,4 @@ sed -n '1~4s/^@/>/p;2~4p' GBI_Ecovalifolium_S2_L001_R1_001_50K.fastq > GBI_Ecova
 
 blastn -task blastn -num_descriptions 1 -num_alignments 1 -num_threads 128 -query GBI_Ecovalifolium_S2_L001_R1_001_50K.fasta -db /ocean/projects/bio210016p/shared/blast_databases/nt -out GBI_Ecovalifolium_S2_L001_R1_001_50K_blast.out
 
-# failed Timed out 576 SUs
+# 343 SUs

@@ -22,4 +22,4 @@ sed -n '1~4s/^@/>/p;2~4p' GBI_Mabbottii_S5_L001_R1_001_50K.fastq > GBI_Mabbottii
 
 blastn -task blastn -num_descriptions 1 -num_alignments 1 -num_threads 128 -query GBI_Mabbottii_S5_L001_R1_001_50K.fasta -db /ocean/projects/bio210016p/shared/blast_databases/nt -out GBI_Mabbottii_S5_L001_R1_001_50K_blast.out
 
-# failed, 665 SUs
+# 406 SUs

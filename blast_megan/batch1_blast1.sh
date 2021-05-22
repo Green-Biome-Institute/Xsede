@@ -20,3 +20,5 @@ sed -n '1~4s/^@/>/p;2~4p' GBI_Adensiflora_S3_L001_R1_001_50K.fastq > GBI_Adensif
 
 blastn -task blastn -num_descriptions 1 -num_alignments 1 -num_threads 64 -query GBI_Adensiflora_S3_L001_R1_001_50K.fasta -db /ocean/projects/bio210016p/shared/blast_databases/nt -out GBI_Adensiflora_S3_L001_R1_001_50K_blast.out
 
+
+#239 SUs
