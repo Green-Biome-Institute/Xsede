@@ -2,7 +2,7 @@
 #SBATCH -D /ocean/projects/bio210016p/shared/novaseq/batch1/rawdata/
 #SBATCH --account=bio210016p
 #SBATCH --partition=RM-shared
-#SBATCH --ntasks-per-node=48
+#SBATCH --ntasks-per-node=64
 #SBATCH --time=48:00:00
 #SBATCH -o /ocean/projects/bio210016p/makman/outs/batch1_trim3.out
 #SBATCH -e /ocean/projects/bio210016p/makman/outs/batch1_trim3.err
@@ -28,4 +28,4 @@ module load python/3.8.6
 # cutadapt -a ATAGGTCC -A TGGTACAG -o GBI_Fstriata_S4_L001_R1_001_trimmed.fastq.gz -p GBI_Fstriata_S4_L001_R2_001_trimmed.fastq.gz GBI_Fstriata_S4_L001_R1_001.fastq.gz GBI_Fstriata_S4_L001_R2_001.fastq.gz
 # cutadapt -a TCCACGTT -A GTCTGATC -o GBI_Mabbottii_S5_L001_R1_001_trimmed.fastq.gz -p GBI_Mabbottii_S5_L001_R2_001_trimmed.fastq.gz GBI_Mabbottii_S5_L001_R1_001.fastq.gz GBI_Mabbottii_S5_L001_R2_001.fastq.gz
  
-/ocean/projects/bio210016p/shared/programs/TrimGalore-0.6.6/trim_galore --paired --illumina --fastqc --gzip --cores 48 GBI_Ecovalifolium_S2_L001_R1_001.fastq.gz GBI_Ecovalifolium_S2_L001_R2_001.fastq.gz
+/ocean/projects/bio210016p/shared/programs/TrimGalore-0.6.6/trim_galore --paired --illumina --fastqc --gzip --cores 64 GBI_Ecovalifolium_S2_L001_R1_001.fastq.gz GBI_Ecovalifolium_S2_L001_R2_001.fastq.gz
