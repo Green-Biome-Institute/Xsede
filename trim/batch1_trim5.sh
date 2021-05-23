@@ -2,7 +2,7 @@
 #SBATCH -D /ocean/projects/bio210016p/shared/novaseq/batch1/rawdata/
 #SBATCH --account=bio210016p
 #SBATCH --partition=RM
-#SBATCH --ntasks-per-node=128
+#SBATCH --ntasks-per-node=12
 #SBATCH --time=48:00:00
 #SBATCH -o /ocean/projects/bio210016p/makman/outs/batch1_trim5.out
 #SBATCH -e /ocean/projects/bio210016p/makman/outs/batch1_trim5.err
@@ -23,4 +23,4 @@ module load python/3.8.6
 
 
 
-/ocean/projects/bio210016p/shared/programs/TrimGalore-0.6.6/trim_galore --paired --illumina --fastqc --gzip --cores 128 GBI_Mabbottii_S5_L001_R1_001.fastq.gz GBI_Mabbottii_S5_L001_R2_001.fastq.gz
+/ocean/projects/bio210016p/shared/programs/TrimGalore-0.6.6/trim_galore --paired --illumina --fastqc --gzip --cores 12 GBI_Mabbottii_S5_L001_R1_001.fastq.gz GBI_Mabbottii_S5_L001_R2_001.fastq.gz
