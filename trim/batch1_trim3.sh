@@ -29,3 +29,5 @@ module load python/3.8.6
 # cutadapt -a TCCACGTT -A GTCTGATC -o GBI_Mabbottii_S5_L001_R1_001_trimmed.fastq.gz -p GBI_Mabbottii_S5_L001_R2_001_trimmed.fastq.gz GBI_Mabbottii_S5_L001_R1_001.fastq.gz GBI_Mabbottii_S5_L001_R2_001.fastq.gz
  
 /ocean/projects/bio210016p/shared/programs/TrimGalore-0.6.6/trim_galore --paired --illumina --fastqc --gzip --cores 4 GBI_Ecovalifolium_S2_L001_R1_001.fastq.gz GBI_Ecovalifolium_S2_L001_R2_001.fastq.gz
+
+#48 SUs

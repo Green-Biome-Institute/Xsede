@@ -24,3 +24,5 @@ module load python/3.8.6
 
 
 /ocean/projects/bio210016p/shared/programs/TrimGalore-0.6.6/trim_galore --paired --illumina --fastqc --gzip --cores 8 GBI_Apallida_S1_L001_R1_001.fastq.gz GBI_Apallida_S1_L001_R2_001.fastq.gz
+
+#66 SUs

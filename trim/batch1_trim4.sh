@@ -23,7 +23,7 @@ module load python/3.8.6
 
 
 
-zcat GBI_Fstriata_S4_L001_R1_001.fastq.gz GBI_Fstriata_S10_L001_R1_001.fastq.gz > GBI_Fstriata_S4_S10_L001_R1_001.fastq
+# zcat GBI_Fstriata_S4_L001_R1_001.fastq.gz GBI_Fstriata_S10_L001_R1_001.fastq.gz > GBI_Fstriata_S4_S10_L001_R1_001.fastq
 zcat GBI_Fstriata_S4_L001_R2_001.fastq.gz GBI_Fstriata_S10_L001_R2_001.fastq.gz > GBI_Fstriata_S4_S10_L001_R2_001.fastq
 
 gzip GBI_Fstriata_S4_S10_L001_R1_001.fastq

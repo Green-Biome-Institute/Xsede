@@ -24,3 +24,5 @@ module load python/3.8.6
 
 
 /ocean/projects/bio210016p/shared/programs/TrimGalore-0.6.6/trim_galore --paired --illumina --fastqc --gzip --cores 12 GBI_Mabbottii_S5_L001_R1_001.fastq.gz GBI_Mabbottii_S5_L001_R2_001.fastq.gz
+
+#294 SUs by mistake
