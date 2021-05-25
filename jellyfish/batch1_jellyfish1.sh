@@ -12,4 +12,4 @@
 
 # genome size ~ 1.25, s=G + G*(error=0.01)*coverage (30X)= 1.675 round up to 2G
 
-/ocean/projects/bio210016p/shared/programs/jellyfish-2.3.0/bin/jellyfish count -t 64 -C -m 20 -s 2G -o 20mer_out ./GBI_Adensiflora_S3_S9_L001_R1_001_val_1.fq.gz
+/ocean/projects/bio210016p/shared/programs/jellyfish-2.3.0/bin/jellyfish count -t 64 -C -m 20 -s 2G -o 20mer_out <(zcat ./GBI_Adensiflora_S3_S9_L001_R1_001_val_1.fq.gz)
