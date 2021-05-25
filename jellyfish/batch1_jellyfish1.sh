@@ -10,9 +10,6 @@
 #SBATCH --mail-type=All
 
 
+# genome size ~ 1.25, s=G + G*(error=0.01)*coverage (30X)= 1.675 round up to 2G
 
-
-GBI_Adensiflora_S3_S9_L001_R1_001_trimmed.fastq.gz 
-GBI_Adensiflora_S3_S9_L001_R2_001_trimmed.fastq.gz 
-
-/ocean/projects/bio210016p/shared/programs/jellyfish-2.3.0/bin/jellyfish count -t 64 -C -m 20 -s 5G -o 20mer_out -F 2 <(zcat path/to/cleaned/file/1.fq.gz) <(zcat path/to/cleaned/file/2.fq.gz)
+/ocean/projects/bio210016p/shared/programs/jellyfish-2.3.0/bin/jellyfish count -t 64 -C -m 20 -s 2G -o 20mer_out --stats=batch1_jellyfish1_stats ./GBI_Adensiflora_S3_S9_L001_R1_001_val_1.fq.gz
