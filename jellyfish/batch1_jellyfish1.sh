@@ -15,3 +15,5 @@
 /ocean/projects/bio210016p/shared/programs/jellyfish-2.3.0/bin/jellyfish count -t 64 -C -m 20 -s 2G -o Adensiflora_20mer_out <(zcat ./GBI_Adensiflora_S3_S9_L001_R1_001_val_1.fq.gz)
 /ocean/projects/bio210016p/shared/programs/jellyfish-2.3.0/bin/jellyfish count -t 64 -C -m 17 -s 2G -o Adensiflora_17mer_out <(zcat ./GBI_Adensiflora_S3_S9_L001_R1_001_val_1.fq.gz)
 /ocean/projects/bio210016p/shared/programs/jellyfish-2.3.0/bin/jellyfish count -t 64 -C -m 23 -s 2G -o Adensiflora_23mer_out <(zcat ./GBI_Adensiflora_S3_S9_L001_R1_001_val_1.fq.gz)
+
+#44 SUs
