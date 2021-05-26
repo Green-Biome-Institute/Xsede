@@ -12,8 +12,8 @@
 
 # genome size ~ unknown, s=G + G*(error=0.01)*coverage (30X)
 
-/ocean/projects/bio210016p/shared/programs/jellyfish-2.3.0/bin/jellyfish count -t 24 -C -m 20 -s 10G -o Ecovalifolium_20mer_out <(zcat ./GBI_Ecovalifolium_S2_L001_R1_001_val_1.fq.gz)
-/ocean/projects/bio210016p/shared/programs/jellyfish-2.3.0/bin/jellyfish count -t 24 -C -m 17 -s 10G -o Ecovalifolium_17mer_out <(zcat ./GBI_Ecovalifolium_S2_L001_R1_001_val_1.fq.gz)
-/ocean/projects/bio210016p/shared/programs/jellyfish-2.3.0/bin/jellyfish count -t 24 -C -m 23 -s 10G -o Ecovalifolium_23mer_out <(zcat ./GBI_Ecovalifolium_S2_L001_R1_001_val_1.fq.gz)
+/ocean/projects/bio210016p/shared/programs/jellyfish-2.3.0/bin/jellyfish count -t 64 -C -m 20 -s 10G -o Ecovalifolium_20mer_out <(zcat ./GBI_Ecovalifolium_S2_L001_R1_001_val_1.fq.gz)
+/ocean/projects/bio210016p/shared/programs/jellyfish-2.3.0/bin/jellyfish count -t 64 -C -m 17 -s 10G -o Ecovalifolium_17mer_out <(zcat ./GBI_Ecovalifolium_S2_L001_R1_001_val_1.fq.gz)
+/ocean/projects/bio210016p/shared/programs/jellyfish-2.3.0/bin/jellyfish count -t 64 -C -m 23 -s 10G -o Ecovalifolium_23mer_out <(zcat ./GBI_Ecovalifolium_S2_L001_R1_001_val_1.fq.gz)
 
 #24 SUs was not enough for this
