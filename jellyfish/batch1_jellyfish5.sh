@@ -21,3 +21,5 @@
 jellyfish histo -o Mabbottii_20mer_out.histo Mabbottii_20mer_out
 jellyfish histo -o Mabbottii_17mer_out.histo Mabbottii_17mer_out
 jellyfish histo -o Mabbottii_23mer_out.histo Mabbottii_23mer_out
+
+# 3 SUs

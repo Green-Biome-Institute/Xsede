@@ -21,3 +21,5 @@
 jellyfish histo -o Apallida_20mer_out.histo Apallida_20mer_out
 jellyfish histo -o Apallida_17mer_out.histo Apallida_17mer_out
 jellyfish histo -o Apallida_23mer_out.histo Apallida_23mer_out
+
+#2.3 SUs

@@ -21,3 +21,5 @@
 jellyfish histo -o Adensiflora_20mer_out.histo Adensiflora_20mer_out
 jellyfish histo -o Adensiflora_17mer_out.histo Adensiflora_17mer_out
 jellyfish histo -o Adensiflora_23mer_out.histo Adensiflora_23mer_out
+
+#1.45 SUs
